@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vercel/
+*.log
+.DS_Store
+desktop.ini
+landing-elevator(1).skill
+public/images/
