@@ -1,4 +1,4 @@
-import { CheckCircle2, Layers3, UserRound } from "lucide-react";
+import { CheckCircle2, Layers3 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { BrandLogo } from "@/components/ui/BrandLogo";
@@ -7,23 +7,44 @@ export function AboutSection() {
   return (
     <section className="section-shell bg-bg">
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1.08fr] lg:gap-20">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,.98fr)] lg:gap-16 xl:gap-24">
           <Reveal variant="scale">
-            <div className="surface-shadow relative overflow-hidden rounded-[28px] border border-dark/[.08] bg-white p-6 sm:p-9">
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-accent" />
-              <BrandLogo className="w-[180px]" />
-              <div className="mt-8 rounded-2xl border border-border bg-bg/70 p-5">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-dark text-white"><UserRound className="h-5 w-5" /></span>
-                  <div><p className="font-display text-lg font-bold text-dark">Tiago</p><p className="text-sm text-text-secondary">Persona detrás de DentFlow</p></div>
+            <figure className="surface-shadow relative mx-auto w-full max-w-[34rem] overflow-hidden rounded-[28px] border border-dark/[.08] bg-white lg:mx-0">
+              <div className="absolute inset-x-0 top-0 z-20 h-1 bg-gradient-to-r from-primary to-accent" />
+              <div className="absolute left-5 top-5 z-20 rounded-xl bg-white/90 px-4 py-3 shadow-lg shadow-dark/10 backdrop-blur-md sm:left-7 sm:top-7">
+                <BrandLogo className="w-[138px] sm:w-[158px]" />
+              </div>
+
+              <div className="relative aspect-[4/5] min-h-[25rem] overflow-hidden bg-dark sm:aspect-[5/6] sm:min-h-[32rem] lg:min-h-[34rem]">
+                <img
+                  src="/tiago-ortega.jpg"
+                  alt="Tiago, responsable de la implementación de DentFlow"
+                  className="h-full w-full object-cover object-[50%_24%]"
+                  width="1200"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-dark/90 via-dark/35 to-transparent" />
+                <figcaption className="absolute inset-x-0 bottom-0 z-10 p-6 text-white sm:p-8">
+                  <p className="font-display text-2xl font-extrabold tracking-[-.025em] sm:text-3xl">Tiago</p>
+                  <p className="mt-1 text-sm text-white/80 sm:text-base">Persona detrás de DentFlow</p>
+                </figcaption>
+              </div>
+
+              <div className="grid gap-3 p-4 sm:grid-cols-2 sm:p-5">
+                <div className="flex items-center gap-3 rounded-xl border border-border bg-bg/70 p-4">
+                  <Layers3 className="h-5 w-5 shrink-0 text-primary" />
+                  <p className="text-sm font-semibold leading-5 text-dark">Sistema adaptado al flujo necesario</p>
+                </div>
+                <div className="flex items-center gap-3 rounded-xl border border-border bg-bg/70 p-4">
+                  <CheckCircle2 className="h-5 w-5 shrink-0 text-accent" />
+                  <p className="text-sm font-semibold leading-5 text-dark">Implementación acompañada</p>
                 </div>
               </div>
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="rounded-xl border border-border p-4"><Layers3 className="h-4 w-4 text-primary" /><p className="mt-3 text-xs font-semibold leading-5 text-dark">Sistema adaptado al flujo necesario</p></div>
-                <div className="rounded-xl border border-border p-4"><CheckCircle2 className="h-4 w-4 text-accent" /><p className="mt-3 text-xs font-semibold leading-5 text-dark">Implementación acompañada</p></div>
-              </div>
-            </div>
+            </figure>
           </Reveal>
+
           <Reveal variant="right" delay={100}>
             <p className="text-sm font-bold uppercase tracking-[.18em] text-primary">Quién está detrás</p>
             <h2 className="section-heading mt-4 text-dark">Una implementación con responsable visible.</h2>
