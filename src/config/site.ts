@@ -6,6 +6,8 @@ export const SITE = {
   whatsappMessage:
     "Hola Tiago, vi DentFlow y quiero agendar una demostración de 15 minutos para mi clínica odontológica.",
   email: "dentalcrmauth@gmail.com",
+  instagramHandle: "@dentflow.py",
+  instagramUrl: "https://www.instagram.com/dentflow.py/",
   logoColor: "/brand/dentflow-logo-color.png",
   logoMono: "/brand/dentflow-logo-mono.png",
   appIcon: "/brand/dentflow-icon.png",

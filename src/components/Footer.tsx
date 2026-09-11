@@ -1,4 +1,4 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail, MessageCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { SITE, getWhatsappLink } from "@/config/site";
@@ -23,6 +23,10 @@ export function Footer() {
             <a href={`mailto:${SITE.email}`} className="flex min-h-11 items-center gap-3 text-text-secondary transition-colors hover:text-primary">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/8 text-primary"><Mail className="h-4 w-4" /></span>
               {SITE.email}
+            </a>
+            <a href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center gap-3 text-text-secondary transition-colors hover:text-primary">
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/8 text-primary"><Instagram className="h-4 w-4" /></span>
+              {SITE.instagramHandle}
             </a>
           </div>
         </div>
