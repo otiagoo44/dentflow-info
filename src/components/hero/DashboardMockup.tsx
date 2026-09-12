@@ -18,7 +18,7 @@ const statusStyles: Record<string, string> = {
 export function DashboardMockup() {
   const rows = demoLeads.slice(0, 4);
   return (
-    <div className="relative mx-auto w-full max-w-[680px]" aria-label="Vista previa del panel de DentFlow con datos de demostración">
+    <div className="relative mx-auto w-[96%] max-w-[620px] sm:w-full lg:w-[92%] xl:w-[94%]" aria-label="Vista previa del panel de DentFlow con datos de demostración">
       <div className="pointer-events-none absolute -inset-10 -z-10 bg-[radial-gradient(closest-side,rgba(37,99,235,.2),transparent)]" />
       <div className="surface-shadow relative overflow-hidden rounded-[22px] border border-white bg-white ring-1 ring-dark/[.07] sm:rounded-[28px]">
         <div className="flex items-center justify-between border-b border-border/80 bg-white px-4 py-3 sm:px-5">
